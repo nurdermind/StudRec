@@ -1,6 +1,6 @@
 
 # StudRec
-## Similar students finder
+Similar students finder
 
 ### Run
 ```bash
