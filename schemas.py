@@ -4,7 +4,7 @@ from pydantic import BaseModel
 class StudentRequest(BaseModel):
     faculty: str
     cathedra: str
-    rank: int
+    # rank: int
     scienceStars: int
     sportStars: int
     creationStars: int
