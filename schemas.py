@@ -13,4 +13,6 @@ class StudentRequest(BaseModel):
 
 class StudentResponse(StudentRequest):
     student_id: int
+    rank: int
+    name: str
 

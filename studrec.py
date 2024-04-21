@@ -18,7 +18,8 @@ class StudRec:
         )
 
     def fit(self):
-        data = self._prepare_fit_data(self.dataset.to_dict(orient='records'))
+        df = self.dataset.drop(['name', 'rank'], axis=1)
+        data = self._prepare_fit_data(df.to_dict(orient='records'))
         self._nbrs.fit(data)
 
     def find(self, students: list[dict]) -> list[dict]:
